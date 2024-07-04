@@ -1,0 +1,1 @@
+# amdoc-example
