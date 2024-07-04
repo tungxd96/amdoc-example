@@ -1,4 +1,3 @@
-````markdown
 # Create an Embeddable Buy Button
 
 Use Payment Links to create an embeddable buy button for your website. Create an embeddable buy button to sell a product, subscription, or accept a payment on your website. Start by selecting an existing link from the Payment Links list view or by creating a new link where you can decide which products to sell and customize the checkout UI. After you create your link, click **Buy button** to configure the buy button design and generate the code that you can copy and paste into your website.
@@ -36,7 +35,6 @@ The buy button uses your account’s publishable API key. If you revoke the API 
   </stripe-buy-button>
 </body>
 ```
-````
 
 ## Attributes to Customize Checkout
 

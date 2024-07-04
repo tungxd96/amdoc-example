@@ -1,4 +1,3 @@
-```markdown
 # Track a Payment Link
 
 Use URL parameters and UTM codes to track a payment link. Modify your payment link with URL parameters and Urchin Tracking Module (UTM) codes to get insight into customer behaviors and your marketing strategy’s effectiveness. These tools help identify the source of your traffic and the marketing campaigns leading to the most conversions.
@@ -16,6 +15,7 @@ Use UTM codes to track how customers find your site when they pay using your pay
 | utm_campaign | Identifies your marketing campaigns using the payment link URL.                                                                     |
 
 To add UTM codes, specify redirect as your confirmation behavior. When customers complete a payment, your redirect URL contains the UTM code parameters specified in your payment link URL. Here’s what a payment link looks like with appended UTM codes:
+
 ```
 
 https://buy.stripe.com/test_eVa5nPg1j1wmfXq5kr?utm_medium=earned_email&utm_source=marketo&utm_campaign=campaign_a
@@ -36,8 +36,6 @@ You can simplify reconciliation with the `client_reference_id` URL parameter. Us
 4. Enter a value that meets the requirements described in the following table to append the reference to your URL.
 5. Copy the amended URL for use in your integration.
 
-| PARAMETER           | DESCRIPTION                                                                                                                                                                               | SYNTAX                                                                                                                                                          |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| PARAMETER           | DESCRIPTION                                                                                                                                                                                                                                                                                                                                              | SYNTAX                                                                                                                                                                                                                     |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | client_reference_id | Use `client_reference_id` to attach a unique string of your choice to the Checkout Session. This can be a customer ID or a cart ID (or similar), and you can use it to reconcile the Session with your internal systems. If you add this parameter to your payment link, it’s sent in the `checkout.session.completed` webhook after payment completion. | `client_reference_id` can be composed of alphanumeric characters, dashes, or underscores, and be any value up to 200 characters. Invalid values are silently dropped, but your payment page continues to work as expected. |
-
-```
